@@ -1,0 +1,224 @@
+.container {
+  padding: 0 2rem;
+  // background-image: url("/img/fifa cup 2022-banner.jpg");
+  background-image: url("/img/mundial-banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 1rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 0.875rem;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  color: #ffffff;
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+.count_down {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.count_down li {
+  background-color: #0070f3;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  height: 50px;
+  
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 55px;
+}
+
+.count_down li:before,
+.count_down li:after {
+  position: absolute;
+}
+
+.count_down li:not(:last-child):before {
+  content: ":";
+  font-size: 24px;
+  right: -15px;
+  top: 15px;
+}
+
+.count_down li:after {
+  bottom: -16px;
+  display: flex;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  justify-content: center;
+  width: calc(100% - 22px);
+  color: #ffffff;
+}
+
+.count_down li.days:after {
+  content: "dias";
+  color: #ffffff;
+}
+.count_down li.days.content:after {
+  
+  color: #ffffff;
+}
+
+.count_down li.hours:after {
+  content: "horas";
+  color: #ffffff;
+}
+
+.count_down li.minutes:after {
+  content: "minutos";
+  color: #ffffff;
+}
+
+.count_down li.seconds:after {
+  content: "segundos";
+  color: #ffffff;
+}
+
+.container_countdown {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.container_countdown_fechas {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  font-size: 0.55rem;
+  justify-content: center;
+  
+  margin-top: -30px;
+}
+
+.container_title {
+  @media (max-width: 600px) {
+    margin-top: 280px;
+  }
+}

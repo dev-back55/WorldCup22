@@ -1,0 +1,24 @@
+{
+  "name": "worldcup-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.10",
+    "dotenv": "^16.0.3",
+    "next": "13.0.0",
+    "next-auth": "^4.16.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.0"
+  }
+}
